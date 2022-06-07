@@ -3,7 +3,9 @@ import styled from 'styled-components'
 import { mobile } from '../responsive'
 import {Search, ShoppingCartOutlined} from '@mui/icons-material'
 import { Badge } from '@mui/material'
-
+import {
+    NavLink
+  } from "react-router-dom";
 
 const Container = styled.div`
     height:60px;
@@ -81,14 +83,15 @@ const Navbar = () => {
                     <SearchContainer>
             <Input placeholder="Search" />
             <Search style={{ color: "gray", fontSize: 16 }} />
-          </SearchContainer>    
-        <MenuItem><a href="http://localhost:3000/register">REGISTER</a></MenuItem>
-        <MenuItem><a href="http://localhost:3000/login">SIGN-IN</a></MenuItem>
+          </SearchContainer>
+          <MenuItem><NavLink to="../register">REGISTER</NavLink></MenuItem>  
+        <MenuItem><NavLink to="../login">REGISTER</NavLink></MenuItem>
         <MenuItem>
-       <a href="http://localhost:3000/cart">     <Badge badgeContent={4} color="primary">
+        <NavLink to="../cart">
+           <Badge badgeContent={4} color="primary">
             <ShoppingCartOutlined />
             </Badge>
-            </a>
+            </NavLink>
         </MenuItem>
                 </Right>
             </Wrapper>
