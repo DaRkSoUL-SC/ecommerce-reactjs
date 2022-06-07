@@ -85,7 +85,7 @@ const Navbar = () => {
             <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
           <MenuItem><NavLink to="../register">REGISTER</NavLink></MenuItem>  
-        <MenuItem><NavLink to="../login">SIGNIN</NavLink></MenuItem>
+        <MenuItem><NavLink to="../login">SIGN-IN</NavLink></MenuItem>
         <MenuItem>
         <NavLink to="../cart">
            <Badge badgeContent={4} color="primary">
